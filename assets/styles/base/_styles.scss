@@ -1,0 +1,36 @@
+.caja {
+  border: 2px solid black;
+  background-color: transparent;
+}
+.box-title {
+  position: relative;
+  padding-left: 8px;
+  background-color: var(--v-primary-base);
+  color: white;
+  border-radius: 8px 0 0 4px;
+  top: 0;
+  z-index: 1;
+}
+.box-title::before {
+  content: '';
+  position: absolute;
+  background-color: var(--v-primary-base);
+  border-radius: 0px 4px 4px 0px;
+  top: 0;
+  right: -16px;
+  height: 100%;
+  width: 40%;
+  transform: skew(30deg);
+  z-index: -1;
+}
+.layout-blur {
+  filter: blur(10px);
+}
+.margen-abajo {
+  height: 10vh;
+}
+.backgroundlist {
+  background-color: red;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+}
